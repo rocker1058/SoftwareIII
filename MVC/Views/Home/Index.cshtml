@@ -1,0 +1,68 @@
+﻿
+
+<head>
+    <title> Index</title>
+    <link rel="stylesheet" href="~/Content/Diseñoppal.css" />
+</head>
+
+<header>
+    <a class="btn btn-default btn-danger" href=/Login/IndexV> Iniciar Sesion &raquo;</a>
+    <a class="btn btn-default btn-danger" href=/Login/IndexLogT> Iniciar Sesion Tramitador &raquo;</a>
+    <a class="btn btn-default btn-danger" href=/Login/IndexLogA> Iniciar Sesion Administrador &raquo;</a>
+    <a class="btn btn-default btn-danger" href=/Clientes/Create> Registrate &raquo;</a>
+
+</header>
+
+
+
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="~/images/factura.jpg" alt="" height="200" width="100">
+            </li>
+            <li>
+                <img src="~/images/restau.jpg" alt="" height="200" width="100">
+            </li>
+            <li>
+                <img src="~/images/mercado.jpg" alt="" height="200" width="100">
+            </li>
+            
+        </ul>
+    </div>
+   
+        <div class="row">
+            <div class="col-md-4">
+                <h2>CONOCENOS</h2>
+                <p>
+                    deja que DILIYA se preocupe por ti
+                    inscribete al programa de diligencias premium
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Loguot</h2>
+                <h3>UserName  : @Session["userName"]</h3>
+                <a href="@Url.Action("LogOut","Login")">SALIR</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Registrate</h2>
+                <p>Utiliza nuestros servicios</p>
+                <img src="~/images/usuario.png" width="19" height="19" />
+            </div>
+        </div>
+
+        <div class="row" aling="center">
+            <div class="col-md-4">
+                <h2>Trabaja con nosotros</h2>
+                <p>Necesitas ingresos extra trabaja con nosotros mientras conoces</p>
+                <img src="~/images/tramitador.png" width="29" height="29" />
+                <p><a class="btn btn-default" href=/Tramitadors/Create>Registrate aquí! &raquo;</a></p>
+            </div>
+        </div>
+   
+
+
+

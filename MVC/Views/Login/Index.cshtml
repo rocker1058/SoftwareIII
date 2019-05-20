@@ -1,0 +1,90 @@
+﻿@model IEnumerable< MVC.Models.Cliente >
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width-device-width" />
+    <title>Login</title>/>
+</head>
+<body background="imagenes/fondo.jpg">
+    <div id="login-div">
+        @using (Html.BeginForm("Authorized", "Login", FormMethod.Post))
+        {
+            <table>
+                <tr>
+                    <td></td>
+                    <td style="text-decoration:underline">App Name</td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        @Html.TextBoxFor(model => model.n )
+                        @Html.ValidationMessageFor(model => model.First().Nombres)
+                    </td>
+                </tr>
+                <tr>
+                    @Html.LabelFor(model => model.First().Nombres)
+                </tr>
+                <td>
+                    @Html.EditorFor(model => model.First().Nombres)
+                </td>
+
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.First().Contraseña)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.First().Contraseña)
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        @Html.ValidationMessageFor(model => model.First().Contraseña)
+                    </td>
+                </tr>
+                <tr>
+                   
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="name" value="Login" />
+                        <input type="reset" name="name" value="Clean" />
+                    </td>
+                </tr>
+
+
+
+            </table>
+        }
+
+
+    </div>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

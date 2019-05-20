@@ -1,0 +1,121 @@
+﻿@model IEnumerable<MVC.Models.Tramitador>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+ 
+
+<head>
+    <title> Index</title>
+    <style>
+        tbody {
+            background-image: url(../../images/fondo.png);
+        }
+    </style>
+</head>  
+      
+<h1>Linaddddddaaa</h1>
+<h1>Linaddddddaaa</h1><h1>Linaddddddaaa</h1>
+                      <h1>Linaddddddaaa</h1><h1>Linaddddddaaa</h1>
+
+
+            <p>
+                @Html.ActionLink("Create New", "Create")
+            </p>
+
+            
+            <table class="table" >
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nombres)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Apellidos)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Privilegios)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Telefono)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Direccion)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ContraseñaT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fecha_nacimiento)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Pasado_judicial)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Descripcion)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Experiencia)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Tipo_vehiculo)
+                    </th>
+                    <th></th>
+                </tr>
+
+
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nombres)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Apellidos)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Privilegios)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefono)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Direccion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ContraseñaT)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Fecha_nacimiento)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pasado_judicial)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Descripcion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Experiencia)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tipo_vehiculo)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.CedulaT }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.CedulaT }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.CedulaT })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+       
+

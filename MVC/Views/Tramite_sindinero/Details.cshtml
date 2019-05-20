@@ -1,0 +1,98 @@
+﻿@model MVC.Models.Tramite_sindinero
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tramite_sindinero</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado_tramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado_tramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_tramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_tramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo_tramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_tramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_tramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_tramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transporte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transporte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tiempo_tramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tiempo_tramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar_origen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lugar_origen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar_Destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lugar_Destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Costo_total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Costo_total)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_tramite }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
