@@ -16,6 +16,7 @@
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <BuildToolsFxCopVersion>1.0.1</BuildToolsFxCopVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,14 +26,20 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisTreatWarningsAsErrors>True</CodeAnalysisTreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>True</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisTreatWarningsAsErrors>True</CodeAnalysisTreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -96,6 +103,7 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CodeAnalysisRules.ruleset" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

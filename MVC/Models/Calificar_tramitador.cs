@@ -19,9 +19,9 @@ namespace MVC.Models
         public DateTime Fecha { get; set; }
 
         [Required]
-        [StringLength(50)]
-        public string Tipo { get; set; }
-
+        [StringLength(2)]
+        public string Cedula { get; set; }
+        
         [Required]
         [StringLength(100)]
         public string Descripcion { get; set; }

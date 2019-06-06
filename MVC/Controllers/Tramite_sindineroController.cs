@@ -6,6 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Windows;
+using System.Windows.Forms;
 using MVC.Models;
 
 namespace MVC.Controllers
@@ -56,6 +58,7 @@ namespace MVC.Controllers
             }
 
             return View(tramite_sindinero);
+            Console.Write("Hello");
         }
 
         // GET: Tramite_sindinero/Edit/5
@@ -113,6 +116,7 @@ namespace MVC.Controllers
             db.Tramite_sindinero.Remove(tramite_sindinero);
             db.SaveChanges();
             return RedirectToAction("Index");
+
         }
 
         protected override void Dispose(bool disposing)

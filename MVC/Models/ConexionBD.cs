@@ -76,7 +76,7 @@
                 .IsFixedLength();
 
             modelBuilder.Entity<Calificar_tramitador>()
-                .Property(e => e.Tipo)
+                .Property(e => e.Cedula)
                 .IsFixedLength();
 
             modelBuilder.Entity<Calificar_tramitador>()
